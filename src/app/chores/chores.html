@@ -1,0 +1,21 @@
+<div class="chores-view">
+
+        <div class="chore-list">
+
+            <div class="chore-entry" ng-repeat="chore in vm.chores">
+
+                <div class="chore-owner-anim-wrapper">
+                    <div class="chore-owner" ng-repeat="inCharge in [chore.inCharge]">{{vm.utils.spaceOutString(inCharge)}}</div>
+                </div>
+
+                <div class="chore-name" ng-click="vm.finishChore(chore)" type="button">
+                    <div>{{chore.name}}</div>
+                    <div class="chore-name-overlay"> <div class="chore-name-overlay-label">click to finish!</div> </div>
+                </div>
+                <div class="chore-config" ng-click="vm.showChoreDetails(chore)"> details >> </div>
+            </div>
+
+        </div>
+
+</div>
+

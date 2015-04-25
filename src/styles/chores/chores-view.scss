@@ -1,0 +1,24 @@
+.chores-view {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.chores-view.ng-view {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.chores-view.ng-view-active {
+    opacity: 1;
+}
+
+.chore-list {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    margin: 3em;
+}

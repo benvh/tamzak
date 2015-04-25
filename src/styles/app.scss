@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+@import "font-awesome";
+@import "foundation/components/_type";
+
+//scaled font sizes
+//9 12 16 21 28 37 50 67
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.loading {
+    padding: 1em;
+    align-self: flex-end;
+    margin-top: auto;
+
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+}
+
+.loading {
+    transition: opacity linear 500ms;
+}
+
+.loading.ng-hide {
+    opacity: 0;
+}
+
+
+
+.teh-view {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.teh-view.ng-enter {
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.teh-view.ng-enter-active {
+    opacity: 1;
+}
+
+
+@import "chores/chore-entry";
+@import "chores/chores-view";

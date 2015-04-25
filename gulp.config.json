@@ -1,0 +1,24 @@
+{
+    "buildpath": "build",
+
+    "js": [
+        "./src/app/tamzak.js"
+    ],
+
+    "html": [
+        "src/app/**/*.html"
+    ],
+
+    "foundation": [
+        "bower_components/foundation/scss"
+    ],
+
+    "sassIncludePaths": [
+        "bower_components/foundation/scss",
+        "bower_components/fontawesome/scss"
+    ],
+
+    "styles": [
+        "src/styles/**/*.scss"
+    ]
+}
