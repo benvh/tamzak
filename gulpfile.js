@@ -40,7 +40,9 @@ gulp.task('js', function() {
         .pipe(plug.streamify( plug.uglify({ mangle: false }) ))
         .pipe(plug.streamify( plug.sourcemaps.write() ))
         .pipe(plug.rename('app.bundled.js'))
-        .pipe(gulp.dest(config.buildpath + '/js'));
+        .pipe(gulp.dest(config.buildpath + '/js'))
+
+        .pipe(browsersync.reload( { stream: true } ));
 });
 
 
