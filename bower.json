@@ -2,6 +2,7 @@
   "name": "vagrant",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "src/app/index.html",
   "ignore": [
     "**/.*",
     "node_modules",
